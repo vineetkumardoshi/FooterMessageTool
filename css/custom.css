@@ -1,0 +1,104 @@
+body {
+	background-color: #221E1D;
+	overflow: hidden;
+}
+
+.btn {
+	border-radius: 50%;
+	padding: 20px;
+	background-color: #ECEAE0;
+	cursor: pointer;
+	opacity: 1;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	bottom: 0px;
+	right:10px;
+	position: fixed;
+	display: inline;
+}
+
+.octicon {
+	color: #63AA9C;
+	font-style: bold;
+	font-size: 50px;
+}
+
+.FMT-Message {
+	width: 300px;
+	max-width: 300px;
+	max-height: 250px;
+	height:250px;
+	position: absolute;
+	display: inline-block;
+	border-radius: 10px;
+	padding:15px;
+}
+
+.ButtonSubmit{
+	width: 100px;
+	padding: 10px;
+	position: absolute;
+	display: inline;
+	bottom: 13px;
+	background-color: #63AA9C;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: Agency FB;
+	font-style: bold;
+	color:white;
+	border-radius: 10px;
+}
+
+.sheet {
+	width: 300px; 
+	height: 400px;
+	margin:10px;
+	border-radius:10px;
+	padding:15px;
+}
+
+.developer {
+	display: inline;
+	top:8px;
+	font-size: 25px;
+	font-weight: bold;
+	position:absolute;
+	color: white;
+	font-family: Agency FB;
+}
+
+#FMT {
+	display: none;
+	height: 300px;
+	border-radius: 10px;
+	background-color: #E9633B; 
+	bottom: 40px;
+	right: 40px;
+	width: 300px;
+	position: fixed;
+	padding: 15px;
+}
+
+
+
+h1{
+	font-size: 80px;
+	font-family: Agency FB;
+	color: white;
+	margin: 10px;
+	display: inline;
+}
+
+hr{
+	color: white;
+	background-size: 3px;
+	
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
