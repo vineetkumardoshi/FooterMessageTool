@@ -59,7 +59,8 @@ body {
 
 .developer {
 	display: none;
-	top:8px;
+	top:9px;
+	right:380px;
 	font-size: 25px;
 	font-weight: bold;
 	position:absolute;
@@ -93,7 +94,7 @@ h1{
 hr{
 	color: white;
 	background-size: 3px;
-	
+
 }
 
 input:focus,
