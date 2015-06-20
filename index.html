@@ -19,7 +19,7 @@
 		
 			<div id="FMT" class="pull-right">
 				<textarea id='FMT-Message' class='FMT-Message' placeholder="Message Me!"></textarea>
-				<button id="ButtonSubmit" class="ButtonSubmit" onclick="postContactToGoogle()" type="button" >SEND</button> 
+				<button id="ButtonSubmit" class="ButtonSubmit" onclick="postContactToGoogle()" type="button" >Send</button> 
 			</div>			
 			<span class="octicon octicon-mail btn">
 			</span>
@@ -55,6 +55,8 @@ $( ".btn" ).click(function() {
 }, 300); 
   	
 });
+
+$('h1').hover(function(){$('.developer').show(1000);$('.developer').css("display","inline")},function(){$('.developer').hide("slow")})
 
 </script>
 
