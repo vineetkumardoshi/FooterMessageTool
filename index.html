@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<!-- octicons-->
+	<link href="octicons/octicons.css" rel="stylesheet" media="screen">
+	
+	<!-- custom css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+</head>
+
+<body>
+				
+		
+			<div id="FMT" class="pull-right">
+				<textarea id='FMT-Message' class='FMT-Message' placeholder="Message Me!"></textarea>
+				<button id="ButtonSubmit" class="ButtonSubmit" onclick="postContactToGoogle()" type="button" >SEND</button> 
+			</div>			
+			<span class="octicon octicon-mail btn">
+			</span>
+
+			<h1>F00TER MESSAGE T00L</h1><p class="developer">Developed by<br>
+      Er. VINEET KUMAR DOSHI, IIT G</p>
+
+      <hr>
+
+			
+			<iframe src="https://docs.google.com/spreadsheets/d/10ywJXJ-8XubgaCU04vS1Vd6Ck-_sotG0RohAhrg-8aI/pubhtml?widget=false&amp;headers=false" class="sheet"> </iframe>
+			
+			<img src="info.png" width="400px" heigth="200px">
+      <div style="top:60px; right:0px;position:absolute;display:inline;">
+          <iframe src="http://ghbtns.com/github-btn.html?user=vineetkumardoshi&repo=FooterMessageTool&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
+   
+          <iframe src="http://ghbtns.com/github-btn.html?user=vineetkumardoshi&repo=FooterMessageTool&type=fork&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;margin-left:-50px" allowTransparency="true"></iframe>
+      </div>    
+</body>
+<script>
+$( ".btn" ).click(function() {
+  $( "#FMT" ).toggle( 200 );
+  $(this).css( "padding","22px");
+  $(this).css( "opacity","0.9");
+  $(this).css( "margin-right","8");
+  $(this).css( "margin-bottom","8");
+  
+  setTimeout(function(){
+  $('.btn').css("padding","20px");
+  $('.btn').css( "opacity","1");
+  $('.btn').css( "margin-right","10");
+  $('.btn').css( "margin-bottom","10");
+}, 300); 
+  	
+});
+
+</script>
+
+<script>
+        function postContactToGoogle() {
+            var FMT = $('#FMT-Message').val();
+
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1D_vVRlWJ1ijKnL-_4wqvcUfLY2OohbSy9AM3aHNtw-I/formResponse",
+                    data: { "entry_1458951797": FMT },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function () {
+                           $('#FMT-Message').val('Message Received...');
+
+                           setTimeout(function(){
+						   $('#FMT-Message').val('');
+						  }, 1000);  
+                        },
+                        200: function () {
+                           $('#FMT-Message').val('Message NOT Received...');
+                           setTimeout(function(){
+						   $('#FMT-Message').val('');
+						  }, 1000); 
+                        }
+                    }
+                });
+        }
+    </script>
+</html>
