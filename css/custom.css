@@ -44,7 +44,7 @@ body {
 	background-color: #63AA9C;
 	cursor: pointer;
 	font-size: 20px;
-	font-family: Agency FB;
+	font-family: 'Oswald', sans-serif;
 	font-style: bold;
 	color:white;
 	border-radius: 10px;
@@ -65,7 +65,7 @@ body {
 	font-weight: bold;
 	position:absolute;
 	color: white;
-	font-family: Agency FB;
+	font-family: 'Oswald', sans-serif;
 }
 
 #FMT {
@@ -84,7 +84,7 @@ body {
 
 h1{
 	font-size: 80px;
-	font-family: Agency FB;
+	font-family: 'Oswald', sans-serif;
 	color: white;
 	margin: 10px;
 	display: inline;
